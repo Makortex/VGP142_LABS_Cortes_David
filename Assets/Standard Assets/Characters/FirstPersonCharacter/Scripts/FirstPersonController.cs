@@ -4,6 +4,9 @@ using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
 
+
+//[RequireComponent (typeof(Animator))]
+
 #pragma warning disable 618, 649
 namespace UnityStandardAssets.Characters.FirstPerson
 {

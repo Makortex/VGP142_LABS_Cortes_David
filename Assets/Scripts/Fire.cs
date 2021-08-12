@@ -11,10 +11,10 @@ public class Fire : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            fire();
-        }
+        //if (Input.GetButtonDown("Fire1"))
+        //{
+        //    fire();
+        //}
     }
     public void fire()
     {
@@ -32,6 +32,6 @@ public class Fire : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Destroy(collision.collider.gameObject);
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 }
