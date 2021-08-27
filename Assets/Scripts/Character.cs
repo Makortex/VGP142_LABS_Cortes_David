@@ -89,6 +89,17 @@ public class Character : MonoBehaviour
         {
             Debug.LogWarning("Always get called");
         }
+        // for simple info not-encrypted (encrypt yourself)
+        PlayerPrefs.SetString("Name1", "Mako");
+        PlayerPrefs.SetFloat("Volume", 0.5f);
+        PlayerPrefs.Save();
+    }
+    private void Awake()
+    {
+        if (PlayerPrefs.HasKey("Name1"))
+            name = PlayerPrefs.GetString("Name1");
+        else
+            name = "Default";
     }
 
     // Update is called once per frame
@@ -219,5 +230,9 @@ public class Character : MonoBehaviour
 
             Destroy(temp.gameObject, 2.0f);
         }
+    }
+    public void speedUp()
+    {
+        speed = 10.0f;
     }
 }

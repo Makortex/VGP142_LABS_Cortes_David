@@ -10,6 +10,8 @@ TagManager:
   - PlayerPunch
   - PlayerKick
   - PatrolNode
+  - Weapon
+  - PUp
   layers:
   - Default
   - TransparentFX

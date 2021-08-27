@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CanvasManager : MonoBehaviour
 {
     public GameObject endText;
+    public Text scoreText;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,17 @@ public class CanvasManager : MonoBehaviour
     {
         
     }
-
+    public void SetScoreText()
+    {
+        if (GameManager.instance)
+        {
+            scoreText.text = GameManager.instance.score.ToString();
+        }
+        else
+        {
+            SetScoreText();
+        }
+    }
     public void ShowEndText()
     {
         endText.SetActive(true);
