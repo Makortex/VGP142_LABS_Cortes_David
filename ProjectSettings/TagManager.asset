@@ -12,6 +12,7 @@ TagManager:
   - PatrolNode
   - Weapon
   - PUp
+  - EnemySpawnPoint
   layers:
   - Default
   - TransparentFX
